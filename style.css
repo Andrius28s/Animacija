@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #876c57;
+    color: #fcfbc2;
+    text-align: center;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    margin-top: 50px;
+    text-align: center;
+}
+
+li {
+    background: #fcfbc2;
+    color: #fcfbc2;
+    margin: 5px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Dancing Script';
+    border-radius: 30px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+li:hover {
+    transition: linear 1s;
+    width: 700px;
+    color: #473535;
+    box-shadow: 2px 2px 5px #473535;
+}
+
+li:active {
+    transform: scale(0.5);
+}
+
+button {
+    background-color: #fdf98e;
+    color: #473535;
+    font-size: 1em;
+    margin: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Dancing Script';
+    border: solid 2px #473535;
+    transition: 2s;
+
+}
+
+.spust {
+    animation-name: puls;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes puls {
+    from {
+        transform: scale(1);
+
+    }
+
+    to {
+        transform: scale(1.5);
+        background: #f9f85f;
+        box-shadow: 0px 0px 10px #f28530;
+    }
+
+}
+
+
+
